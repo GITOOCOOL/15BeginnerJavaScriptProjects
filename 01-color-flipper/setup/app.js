@@ -1,7 +1,8 @@
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 
-    button = document.getElementById('btn')
-    main = document.querySelector('main')
+const button = document.getElementById('btn')
+const main = document.querySelector('main')
+const color = document.querySelector('.color')
     
     let previousIndex = null
 
@@ -14,6 +15,7 @@ const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
             
         }
         main.style.background = colors[randomIndex]
+        color.textContent = colors[randomIndex]
         previousIndex = randomIndex
         console.log(colors[randomIndex])
     }
